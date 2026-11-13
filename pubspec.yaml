@@ -1,17 +1,15 @@
 name: fayton_design
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: 'none'
 
 environment:
   sdk: ^3.12.0
-
 
 dependencies:
   flutter:
     sdk: flutter
 
- 
   cupertino_icons: ^2.0.0
   dio: ^5.11.1
   flutter_bloc: ^9.1.1
@@ -20,17 +18,16 @@ dependencies:
   flutter_secure_storage: ^11.2.0
   connectivity_plus: ^7.3.2
   provider: ^6.1.5+1
+  pinput: ^6.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
   flutter_lints: ^6.0.0
 
 flutter:
-
-
   uses-material-design: true
 
-
+  assets:
+    - assets/images/fayton.png
