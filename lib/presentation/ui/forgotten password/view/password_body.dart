@@ -1,5 +1,7 @@
 import 'package:fayton_design/presentation/ui/OTP/view/otp_page.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:fayton_design/presentation/components/app_button.dart';
 
 class PasswordBody extends StatelessWidget {
   const PasswordBody({super.key});
@@ -26,27 +28,12 @@ class PasswordBody extends StatelessWidget {
               decoration: InputDecoration(prefixText: '+994'),
             ),
             Spacer(),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context, MaterialPageRoute(
-                    builder: (context) => OtpPage()));
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xff2A2E37),
-                minimumSize: Size(361, 46)
-              ),
-              child: Text(
-                'Davam et',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16),
-              ),
-            ),
-          ],
+            AppButton(text: 'Davam et', onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const OtpPage() ));
+            })])
         ),
-      ),
-     )
-    );
+        ),
+      );
+     
   }
 }

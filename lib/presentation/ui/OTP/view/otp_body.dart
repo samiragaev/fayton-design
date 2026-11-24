@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
+import 'package:fayton_design/presentation/components/app_button.dart';
 
 class OtpBody extends StatelessWidget {
   const OtpBody({super.key});
@@ -43,17 +44,7 @@ class OtpBody extends StatelessWidget {
             },
           ),
           Spacer(),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xff2A2E37),
-              minimumSize: Size(361, 46)
-            ),
-            onPressed: () {},
-            child: Text(
-              'Təsdiqlə',
-              style: TextStyle(fontSize: 16, color: Colors.white),
-            ),
-          ),
+          AppButton(text: 'Təsdiqlə', onPressed: (){})
         ],
       ),
     );
